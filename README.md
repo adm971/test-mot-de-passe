@@ -14,7 +14,7 @@ Hashcat est déjà préinstallé
 
 ## 1. Cloner le projet
 
-git clone https://github.com/adm971/test-mot-de-passe.git
+git clone -b master https://github.com/adm971/test-mot-de-passe.git
 
 
 ---
