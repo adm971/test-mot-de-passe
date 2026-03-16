@@ -75,10 +75,4 @@ while True:
             else : 
                 sg.Popup(f"Mot de passe trop solide pour etre cracké \n", title="Runtime limit reached, aborting")
 
-
-
-        # CHIFFREMENT
-    if event == "-CRYPT-":
-        print("Chiffrement")
-
 win.close()
