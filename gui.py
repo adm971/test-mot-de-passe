@@ -42,19 +42,6 @@ main_layout = [
         sg.Radio("Limitée ==>","TIME_GROUP", key="-FINI-"),
         sg.Input(key="-TIME-", size=(5,1)), sg.Text("secondes"),
     ],
-    
-
-    # Ligne Chiffrement
-    [
-        sg.Button(
-            button_text="Chiffrement",
-            key="-CRYPT-",
-            button_color="green",
-            disabled_button_color="red",
-            auto_size_button=True,
-            mouseover_colors="blue"
-        )
-    ],
 
     # Affichage mot de passe
     [sg.Text("", key="-PASSWD-")]
