@@ -28,7 +28,7 @@ build_exe_options = {
 }
 
 setup(
-    name="PasswordSecurityTool",
+    name="testmdp",
     version="1.0",
     description="Outil pédagogique de génération et brute force de mots de passe avec Python et Hashcat",
     options={"build_exe": build_exe_options},
@@ -36,7 +36,7 @@ setup(
         Executable(
             "main.py",
             base=base,
-            target_name="PasswordSecurityTool.exe"
+            target_name="testmdp.exe"
         )
     ]
 )
