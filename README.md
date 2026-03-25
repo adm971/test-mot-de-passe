@@ -46,5 +46,5 @@ python setup.py build
 
 4. Lancer le programme :
 
-un dossier "build" sera créé avec un sous dossier "exe.win" dans le quel se trouve "main.exe"
+un dossier "build" sera créé avec un sous dossier "exe.win" dans le quel se trouve "testmdp.exe"
 Lancer main.exe
