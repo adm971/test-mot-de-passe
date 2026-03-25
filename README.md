@@ -5,7 +5,7 @@ sur un mot de passe de plus de 3 ou 4 caractères) soit avec une attaque de brut
 
 Ces deux attaques ont des performances très différentes. 
 
-Ce programme permet alors également de faire des estimations sur la durée nécessaire pour cracker un mot de passe donné si celui est trop complexe et pour python 
+Ce programme permet alors également de faire des estimations sur la durée nécessaire pour cracker un mot de passe donné si celui-ci est trop complexe et pour python 
 et pour hashcat. 
 Lorsque mises à l'épreuve de mot de passe qui suivent les recommendations de l'Agence nationale de la sécurité des systèmes d’information il ces deux attaques 
 bruteforce s'avèrent largement inefficaces(durée estimée qui va de plusieurs années jusqu'à des échelles de temps cosmiques et inhumaines). 
