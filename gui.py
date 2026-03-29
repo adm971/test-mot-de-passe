@@ -2,30 +2,24 @@ import PySimpleGUI4 as sg
 
 main_layout = [
     # Ligne Titre
-    [sg.Text("Mot de passe :\nAu dessus de 8 caractères il sera impossible de le cracker")],
+    [sg.Text("Choisir mot de passe :")],
 
     # Ligne Mot de passe
     [   sg.Input(key="-INPUT-", size=(25, 1)),
         sg.Button("OK", key="-OK-"),
+        sg.Text("Ou"),
         sg.Button("Générer mot de passe(6 caractères)", key="-GEN-"), 
-    ],
-
-    # Ligne Bruteforce 
-    [
-        sg.Button(
-            button_text="Bruteforce",
-            key="-BRUTE-",
-            button_color="green",
-            disabled_button_color="red",
-            auto_size_button=True,
-            mouseover_colors="blue"
-        )
     ],
 
     # Ligne Radio 
     [
+        sg.Text("Sélectionner une méthode d'attaque Bruteforce :"),
+    ],
+
+    [
         sg.Radio("Bruteforce Python(aucun hachage)", "HASH_GROUP", key="-PY-", default=True),
     ],
+
     [
         sg.Text("Bruteforce + hachage"),
         sg.Radio("MD5", "HASH_GROUP", key="-MD5-"),
@@ -43,6 +37,19 @@ main_layout = [
         sg.Input(key="-TIME-", size=(5,1)), sg.Text("secondes"),
     ],
 
+
     # Affichage mot de passe
-    [sg.Text("", key="-PASSWD-")]
+    [sg.Text("", key="-PASSWD-")],
+
+     # Ligne Bruteforce 
+    [
+        sg.Button(
+            button_text="Lancer Attaque Bruteforce",
+            key="-BRUTE-",
+            button_color="green",
+            disabled_button_color="red",
+            auto_size_button=True,
+            mouseover_colors="blue"
+        )
+    ]
 ]
