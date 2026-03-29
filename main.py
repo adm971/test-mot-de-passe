@@ -19,7 +19,7 @@ while True:
     if event == "-GEN-" : 
         # GENERER MDP
         passwd = generate_password(random.randint(2,6))
-        sg.Popup(passwd, title="Mot de passe", custom_text="Fermer")
+        sg.Popup(f"Mot de passe généré : {passwd} \nVeuillez appuyer sur le bouton 'fermer' puis 'Lancer Attaque Bruteforce' pour continuer", title="Mot de passe", custom_text="Fermer")
     if event == "-OK-" : 
         # INPUT MDP
         passwd = values["-INPUT-"]
@@ -74,5 +74,6 @@ while True:
                 sg.Popup(f"Mot de passe : {crack} trouvé", title="Mot de passe trouvé")
             else : 
                 sg.Popup(f"Mot de passe trop solide pour etre cracké \n", title="Runtime limit reached, aborting")
+
 
 win.close()
