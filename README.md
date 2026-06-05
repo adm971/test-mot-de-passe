@@ -43,6 +43,7 @@ python -m pip install cx_Freeze
 3. Compiler le programme :
 
 cd test-mot-de-passe
+
 python setup.py build
 
 4. Lancer le programme :
