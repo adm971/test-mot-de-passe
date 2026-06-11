@@ -31,3 +31,5 @@ git clone -b master https://github.com/adm971/test-mot-de-passe.git
 cd test-mot-de-passe 
 
 pip install -r requirements.txt
+
+python main.py
