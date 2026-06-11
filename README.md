@@ -18,7 +18,6 @@ Hashcat est déjà préinstallé
 
 - Python 3.8+
 - pip
-- cx_Freeze
 
 ---
 
@@ -29,24 +28,6 @@ Hashcat est déjà préinstallé
 git clone -b master https://github.com/adm971/test-mot-de-passe.git
 
 
----
+cd test-mot-de-passe 
 
-# Installation sur Windows
-
-1. Installer Python depuis :
-https://www.python.org/downloads/
-
-2. Installer cx_Freeze :
-
-python -m pip install cx_Freeze
-
-3. Compiler le programme :
-
-cd test-mot-de-passe
-
-python setup.py build
-
-4. Lancer le programme :
-
-un dossier "build" sera créé avec un sous dossier "exe.win" dans le quel se trouve "testmdp.exe"
-Lancer main.exe
+pip install -r requirements.txt
