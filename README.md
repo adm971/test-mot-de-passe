@@ -16,7 +16,7 @@ Hashcat est déjà préinstallé
 
 ## Prérequis
 
-- Python 3.8+
+- Python 3.8+ https://www.python.org/downloads/
 - pip
 
 ---
